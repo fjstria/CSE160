@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  	<meta charset="utf-8" />
+  	<title>Assignment 2</title>
+</head>
+
+<body onload="main()">
+	<canvas id="webgl" width="600" height="600">
+		Please use a browser that supports "canvas"
+	</canvas>
+
+	<p>
+		<p id="numdot"> XXX </p>
+		Animation:
+		<button type="button" id="on">ON</button>
+		<button type="button" id="off">OFF</button>
+	</p>
+	
+	<p>
+		Rotation (x-axis): <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlide">
+	</p>
+	
+	<p>
+		<b>Leg Adjustments:</b>
+		<p></p>
+		Front Left: <input type="range" min="-20" max="20" value="0" class="slider" id="frontLeft">
+		Front Right: <input type="range" min="-20" max="20" value="0" class="slider" id="frontRight">
+		<p></p>
+		Back Left: <input type="range" min="-10" max="10" value="0" class="slider" id="backLeft">
+		Back Right: <input type="range" min="-10" max="10" value="0" class="slider" id="backRight">
+	</p>
+	
+	<p>
+		<b>Tail Adjustments:</b>
+		<p></p>
+		Base: <input type="range" min="-5" max="5" value="0" class="slider" id="base">
+		Middle: <input type="range" min="-5" max="5" value="0" class="slider" id="middle">
+		Tip: <input type="range" min="-5" max="5" value="0" class="slider" id="tip">
+	</p>
+
+	<p>
+		<i>Shift-click to help the mooshroom grow his mushroom!</i>
+	</p>
+
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix.js"></script>
+
+	<script src="Triangle.js"></script>
+	<script src="Cube.js"></script>
+	<script src="Cone.js"></script>
+	<script src="BlockyAnimal.js"></script>
+</body>
+
+</html>

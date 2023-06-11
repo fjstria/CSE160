@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  	<meta charset="utf-8" />
+  	<title>Assignment 4</title>
+</head>
+
+<body onload="main()">
+	<canvas id="webgl" width="600" height="600">
+		Please use a browser that supports "canvas"
+	</canvas>
+
+	<p id="numdot"> XXX </p>
+    
+	<p style="padding: 9px; border: 2px solid rgba(51644, 16, 19, 0.5);">Welcome to my lovely home. Feel free to look around.</p>
+
+    <p>
+        <b>Controls: </b>W = forward | S = back | A = left | D = right | Q = pan left | E = pan right
+	</p>
+    
+	<p>
+		Normals:
+		<button type="button" id="normal_on">ON</button>
+		<button type="button" id="normal_off">OFF</button>
+
+		Light:
+		<button type="button" id="light_on">ON</button>
+		<button type="button" id="light_off">OFF</button>
+		
+		<p></p>
+
+		Mooshroom Animation:
+		<button type="button" id="on">ON</button>
+		<button type="button" id="off">OFF</button>
+
+		Light Animation:
+		<button type="button" id="Lon">ON</button>
+		<button type="button" id="Loff">OFF</button>
+	</p>
+	
+	<p>
+		Rotate Camera: <input type="range" min="0" max="360" value="-180" class="slider" id="angleSlide">
+		<p></p>
+		Lighting Color: <input type="range" min="0" max="10" value="10" class="slider" id="bSlide">
+		<p></p>
+		Move Light:
+		X: <input type="range" min="-250" max="250" value="0" class="slider" id="lightX">
+		Y: <input type="range" min="-250" max="250" value="100" class="slider" id="lightY">
+		Z: <input type="range" min="-250" max="250" value="-200" class="slider" id="lightZ">
+	</p>
+
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix.js"></script>
+
+	<script src="Triangle.js"></script>
+	<script src="Cube.js"></script>
+	<script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+	<script src="Lighting.js"></script>
+</body>
+
+</html>
